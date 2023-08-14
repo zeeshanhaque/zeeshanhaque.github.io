@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/z-logo.png" width="60px" alt="com logo">
+            </a>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="news-website"><a href="NewsWebsite/index.html">News</a></li>
+                    <li class="hover-link nav-item" id="netclix"><a href="Netclix/netflix.html">Netclix</a></li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <button class="dark-button" onclick="darkMode()" style="background: none; border: none;"><img
+                        src="assets/night-mode.png" alt="night-mode" class="dark-img"></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container flex">
+        <div class="portfolio-cards">
+
+            <div class="portfolio-card-designer">
+                <div class="card-subheading">
+                    <div>"Before software can be reusable it first has to be usable."
+                        <p style="font-style: italic; font-size: 26px; float: right;"> - Ralph Johnson</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <h2 class="card-heading">Hey, User!</h2>
+                <div class="card-subheading">You can find and navigate to my web projects through the Navbar.
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery grid">
+            <div class="box row-2"
+                style="background-image: url(https://images.unsplash.com/photo-1633956257840-fdd7a68222a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80);">
+                Box</div>
+            <div class="box col-2"
+                style="background-image: url(https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);">
+                Code</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);">
+                Live</div>
+            <div class="box row-2"
+                style="background-image: url(https://images.unsplash.com/photo-1602827113876-839bcf3ccb3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);">
+                Grapple</div>
+            <div class="box col-2"
+                style="background-image: url(https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);">
+                Lift</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1566314748684-1e536fe1a148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);">
+                Understand</div>
+            <div class="box col-2"
+                style="background-image: url(https://images.unsplash.com/photo-1471560090527-d1af5e4e6eb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);">
+                Rest</div>
+        </div>
+    </div>
+
+    <script>
+        var isDarkMode = false;
+        function darkMode() {
+            if (isDarkMode == false) {
+                document.body.classList.add('dark');
+                isDarkMode = true;
+            }
+            else {
+                document.body.classList.remove('dark');
+                isDarkMode = false;
+            }
+        }
+    </script>
+</body>
+
+
+</html>
