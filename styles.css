@@ -194,4 +194,7 @@ nav {
     .card-heading {
         margin-block: 6px;
     }
+    .main-nav {
+        flex-direction: row;
+    }
 }
