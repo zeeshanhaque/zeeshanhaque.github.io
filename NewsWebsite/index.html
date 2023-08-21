@@ -5,33 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News App</title>
+    <title>NewsLink+</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../assets/z-logo.png" type="image/x-icon">
 </head>
 
 <body>
     <nav>
-        <div class="main-nav container flex">
+        <div class="main-nav container grid">
 
             <a href="#" onclick="reload()" class="company-logo">
                 <img src="./assets/news-logo.png" alt="company logo">
             </a>
 
-            <div class="nav-links">
-                <ul class="flex">
-                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
-                    <li class="hover-link nav-item" id="world" onclick="onNavItemClick('world')">World</li>
-                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
-                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology
-                    </li>
-                </ul>
-            </div>
+            <div class="mobile-nav grid">
 
-            <div class="search-bar flex">
-                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
-                <button id="search-button" class="search-button">Search</button>
+                <div class="nav-links grid">
+                    <ul class="flex">
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                        <li class="hover-link nav-item" id="world" onclick="onNavItemClick('world')">World</li>
+                        <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                        <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">
+                            Technology
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search-bar flex grid">
+                    <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
             </div>
         </div>
+
     </nav>
 
     <main>
@@ -55,6 +61,10 @@
         </div>
 
         <div class="cards-container container flex" id="cards-container">
+        </div>
+
+        <div class="dark-mode">
+            <img src="../assets/night-mode.png" alt="night-mode" class="dark-img" onclick="darkMode()">
         </div>
     </main>
 

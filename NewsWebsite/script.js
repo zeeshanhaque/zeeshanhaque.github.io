@@ -151,3 +151,10 @@ function formatTime(date) {
 
 const currentDate = new Date();
 const formattedTime = formatTime(currentDate);
+
+
+// DARK 
+
+function darkMode() {
+    document.body.classList.toggle('dark');
+}
