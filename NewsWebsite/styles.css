@@ -7,6 +7,7 @@
 }
 
 :root {
+    --theme-color: #fdc80c;
     --primary-text-color: #232324;
     --secondary-text-color: #909091;
     --accent-color: #5f50a9;
@@ -87,8 +88,8 @@ nav {
 
 .company-logo img {
     justify-self: start;
-    width: 90px;
-    height: 40px;
+    width: 80px;
+    height: 36px;
     margin: 0;
     padding: 0;
 }
@@ -105,15 +106,15 @@ nav {
 }
 
 .hover-link:hover {
-    color: var(--secondary-text-color);
+    color: var(--theme-color);
 }
 
 .hover-link:active {
-    color: red;
+    color: powderblue;
 }
 
 .nav-item.active {
-    color: powderblue;
+    color: var(--theme-color);
 }
 
 .search-bar {
@@ -138,15 +139,16 @@ nav {
     max-width: 100px;
     background-color: var(--accent-color-dark);
     color: white;
-    padding: 8px 24px;
-    border: none;
+    padding: 6px 24px;
+    border: 2px solid var(--accent-color-dark);
     border-radius: 4px;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
+    transition: all 0.25s ease;
 }
 
 .search-button:hover {
-    background-color: var(--accent-color);
+    border: 2px solid var(--theme-color);
 }
 
 .dark-bar {
@@ -251,7 +253,7 @@ main {
 
 @media screen and (max-width: 768px) {
     main {
-        margin-top: 50px;
+        margin-top: 60px;
     }
     .container {
         flex-direction: column;
@@ -306,8 +308,8 @@ main {
         padding-inline: 16px;
     }
     .company-logo img {
-        width: 80px;
-        height: 40px;
+        width: 60px;
+        height: 30px;
     }
     .card {
         width: 340px;

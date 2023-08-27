@@ -18,7 +18,7 @@
 
             <div class="nav-links">
                 <ul class="flex">
-                    <li class="hover-link nav-item" id="news-website"><a href="NewsWebsite/index.html">News</a></li>
+                    <li class="hover-link nav-item" id="news-website"><a href="NewsWebsite/index.html">News+</a></li>
                     <li class="hover-link nav-item" id="netclix"><a href="Netclix/netflix.html">Netclix</a></li>
                 </ul>
             </div>
@@ -31,59 +31,136 @@
     </nav>
 
     <div class="container flex">
-        <div class="portfolio-cards">
+        <div class="container-1">
+            <div class="portfolio-cards">
 
-            <div class="portfolio-card-designer">
-                <div class="card-subheading">
-                    <div>"Before software can be reusable it first has to be usable."
-                        <p style="font-style: italic; font-size: 26px; float: right;"> - Ralph Johnson</p>
+                <div class="portfolio-card-designer">
+                    <div class="card-subheading">
+                        <div>"Before software can be reusable it first has to be usable." <br>
+                            <p class="quoter"> - Ralph Johnson</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-card">
-                <h2 class="card-heading">Hey, User!</h2>
-                <div class="card-subheading">You can find and navigate to my web projects through the Navbar.
+                <div class="portfolio-card">
+                    <h2 class="card-heading">Hey, User!</h2>
+                    <div class="card-subheading">Welcome to my corner of the web! I'm Zeeshan, an aspiring software dev
+                        with a curiosity for all things tech.
+                        I'm an Arts graduate pursuing a Master's degree in Computer Applications. I like to utilize my
+                        programming skills for developing new things.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-2">
+
+            <div class="portfolio-cards">
+
+
+                <div class="portfolio-card-skills">
+
+                    <div class="about-col-2">
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br>Python, Java, C++</li>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>DBMS</span><br>MySQL</li>
+                                <li><span>Tools and Techs</span><br>Flask, Git, Github</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Blogging Platform</span><br>Flask</li>
+                                <li><span>Employee Management System</span><br>Java Swing</li>
+                                <li><span>News Website</span><br>HTML, CSS, JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>MCA - SPIT, Mumbai</li>
+                                <li><span>2019</span><br>BA - SJCHS, Palghar</li>
+                                <li><span>2017</span><br>Higher Secondary - PG Junior College, Bordi</li>
+                                <li><span>2016</span><br>Matriculation - St. Mary's, Dahanu</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="gallery grid">
-            <div class="box row-2"
+            <div class="box row-2 box-box"
                 style="background-image: url(https://images.unsplash.com/photo-1633956257840-fdd7a68222a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80);">
                 Box</div>
-            <div class="box col-2"
+            <div class="box col-2 box-code"
                 style="background-image: url(https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);">
                 Code</div>
-            <div class="box"
+            <div class="box box-live"
                 style="background-image: url(https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);">
                 Live</div>
-            <div class="box row-2"
+            <div class="box row-2 box-grapple"
                 style="background-image: url(https://images.unsplash.com/photo-1602827113876-839bcf3ccb3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);">
                 Grapple</div>
-            <div class="box col-2"
+            <div class="box col-2 box-lift"
                 style="background-image: url(https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);">
                 Lift</div>
-            <div class="box"
+            <div class="box box-understand"
                 style="background-image: url(https://images.unsplash.com/photo-1566314748684-1e536fe1a148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);">
                 Understand</div>
-            <div class="box col-2"
+            <div class="box col-2 box-rest"
                 style="background-image: url(https://images.unsplash.com/photo-1471560090527-d1af5e4e6eb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);">
                 Rest</div>
         </div>
     </div>
 
+    <footer>
+        <hr class="footer-row">
+
+        <div class="footer-container  flex">
+
+
+            <div class="footer-bio flex">
+                <div class="email-resume">
+                    <a href="assets/MyResume.pdf" download><button class="resume">My Résumé</button></a>
+                </div>
+            </div>
+
+            <div class=" footer-icons flex">
+                <a href="https://www.instagram.com/zeeshanhaq._/" target="_blank"><img
+                        src="assets/social-icons/instagram-icon.png" class="social-icon" alt="instagram-icon"></a>
+                <a href="https://www.facebook.com/profile.php?id=100005038604896" target="_blank"><img
+                        src="assets/social-icons/facebook-icon.png" class="social-icon" alt="instagram-icon"></a>
+                <a href="https://github.com/zeeshanhaque" target="_blank"><img src="assets/social-icons/github-icon.png"
+                        class="social-icon" alt="instagram-icon"></a>
+                <a href="https://www.linkedin.com/in/zeeshan-haque-8972ab288/" target="_blank"><img
+                        src="assets/social-icons/linkedin-icon.png" class="social-icon" alt="instagram-icon"></a>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        var isDarkMode = false;
         function darkMode() {
-            if (isDarkMode == false) {
-                document.body.classList.add('dark');
-                isDarkMode = true;
+            document.body.classList.toggle('dark');
+        }
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
             }
-            else {
-                document.body.classList.remove('dark');
-                isDarkMode = false;
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
             }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
 </body>
