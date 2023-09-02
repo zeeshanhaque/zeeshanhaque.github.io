@@ -5,17 +5,19 @@
 }
 
 :root {
-    --primary-color: rgb(125, 200, 255);
+    --primary-color: rgb(150, 215, 253);
     --secondary-color: rgb(215, 230, 250);
     --primary-text-color: #0e0e0e;
     --accent-color: #5f50a9;
     --accent-color-light: #8b83ae;
+    --background-color: #f2f2f2;
 }
 
 .dark {
     --primary-color: rgb(40, 40, 40);
     --secondary-color: rgb(60, 60, 60);
     --primary-text-color: rgb(234, 234, 234);
+    --background-color: rgb(60, 60, 60);
 }
 
 .flex {
@@ -37,7 +39,6 @@ ul {
 a {
     text-decoration: none;
 }
-
 a:visited {
     text-decoration: none;
     color: black;
@@ -48,26 +49,24 @@ a:visited {
     padding: 120px;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background: var(--background-color);
     overflow: hidden;
 }
 
 nav {
-    background-color: var(--accent-color);
+    height: 64px;
     background-color: var(--accent-color);
     box-shadow: 0 0 4px #bbd0e2;
     position: fixed;
+    z-index: 10;
     top: 0;
-    z-index: 99;
     left: 0;
     right: 0;
     border-radius: 0px 0px 20px 20px;
 }
 
-
 .main-nav {
-    justify-content: space-between;
-    padding-block: 6px;
+    padding-block: 4px;
     background: linear-gradient(to right, var(--accent-color), var(--accent-color-light));
     border-radius: 0px 0px 20px 20px;
 }
@@ -78,25 +77,13 @@ nav {
 
 .nav-links ul li a {
     color: var(--primary-text-color);
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+}
+.nav-links ul li a:hover {
+    color: var(--background-color);
 }
 
-.hover-link {
-    color: var(--primary-text-color);
-    cursor: pointer;
-}
-
-.hover-link:hover {
-    color: var(--secondary-text-color);
-}
-
-.hover-link:active {
-    color: red;
-}
-
-
-.dark-img {
+.header-img {
     width: 60px;
     height: 56px;
     cursor: pointer;
@@ -106,22 +93,25 @@ nav {
     width: 400px;
 }
 
-.portfolio-card-designer {
+.portfolio-card {
     margin: 20px;
     color: var(--primary-text-color);
-    background: var(--accent-color);
-    width: 70%;
-    min-width: 360px;
-    padding: 25px 45px;
+    background: var(--primary-color);
+    width: 80%;
+    min-width: 340px;
+    padding: 20px 40px;
     padding-bottom: 45px;
     border-radius: 12px;
     transition: ease .40s;
 }
 
+.portfolio-card-designer {
+    color: var(--primary-text-color);
+    background: var(--accent-color);
+}
 
 .portfolio-card-designer:hover {
     box-shadow: 18px 18px 87px 0px rgb(10 15 70 / 20%);
-    border-radius: 12px;
     transform: perspective(1000px) rotateX(20.0deg) rotateY(0.0deg) scale3d(1.05, 1.05, 1.05);
 }
 
@@ -131,30 +121,11 @@ nav {
     float: right;
 }
 
-
-.portfolio-card {
-    margin: 20px;
-    color: var(--primary-text-color);
-    background: var(--primary-color);
-    width: 70%;
-    min-width: 360px;
-    padding: 25px 45px;
-    padding-bottom: 45px;
-    border-radius: 12px;
-    transition: ease .40s;
-}
-
 .portfolio-card-skills {
     margin: 10px;
-    color: var(--primary-text-color);
-    background: var(--primary-color);
-    height: 80%;
-    width: 80%;
     min-height: 300px;
     min-width: 360px;
     padding: 10px 20px;
-    border-radius: 12px;
-    transition: ease .40s;
 }
 
 .card-heading {
@@ -174,7 +145,7 @@ nav {
 .tab-links {
     margin-right: 50px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
 }
@@ -189,18 +160,19 @@ nav {
     bottom: -8px;
     transition: 0.5s;
 }
-
 .tab-links.active-link::after {
-    width: 50%;
+    width: 75%;
 }
 
 .tab-contents ul li {
     margin: 10px 0;
+    font-size: 16px;
 }
 
 .tab-contents ul li span {
     color: var(--accent-color);
     font-size: 16px;
+    font-weight: bold;
 }
 
 .tab-contents {
@@ -209,6 +181,15 @@ nav {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+.project-link {
+    width: 16px;
+    margin-inline: 8px;
+}
+.project-link:hover {
+    width: 16px;
+    filter: invert();
 }
 
 .gallery {
@@ -231,7 +212,6 @@ nav {
     background-blend-mode: hard-light;
     transition: all 0.75s ease-in-out;
 }
-
 .box:hover {
     color: black;
     background-color: #999;
@@ -274,7 +254,6 @@ footer {
     border-radius: 4px;
     cursor: pointer;
 }
-
 .resume:hover {
     color: black;
     background-color: var(--accent-color);
@@ -293,12 +272,10 @@ footer {
     filter: invert();
     cursor: pointer;
 }
-
 .social-icon:hover {
     width: 46px;
     fill: blue;
 }
-
 
 
 @media screen and (max-width: 1400px) {
@@ -307,29 +284,17 @@ footer {
         padding: 8px;
     }
 
-    .quoter {
-        font-size: 18px;
-    }
-
     .portfolio-card {
-        margin-block: 10px;
-        padding: 10px 20px;
+        padding: 14px;
     }
 
-    .card-heading {
-        font-size: 18px;
-        margin-block: 8px;
-    }
-
-    .card-subheading {
-        font-size: 18px;
+    .portfolio-card-designer {
+        margin-top: 60px;
+        padding-bottom: 45px;
     }
 
     .gallery {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .gallery {
         width: 100%;
     }
 
@@ -379,21 +344,6 @@ footer {
         grid-row-end: 6;
     }
 
-    .dark-img {
-        width: 50px;
-        height: 46px;
-    }
-
-    .portfolio-card-designer {
-        margin-block: 80px 10px;
-        padding: 20px 40px;
-        padding-bottom: 45px;
-    }
-
-    .card-heading {
-        margin-block: 6px;
-    }
-
     .main-nav {
         flex-direction: row;
     }
@@ -403,10 +353,7 @@ footer {
     }
 
     .footer-container {
-        height: 100%;
-        justify-content: space-between;
-        align-items: center;
-        padding-inline: 10px;
+        padding-inline: 14px;
     }
 
     .footer-bio {
@@ -414,12 +361,9 @@ footer {
         gap: 10px;
     }
 
-
-
     .footer-icons {
         color: white;
         height: 100%;
-        /* width: 100%; */
         justify-content: space-between;
         align-items: center;
         gap: 20px;
@@ -427,19 +371,44 @@ footer {
 
     .social-icon {
         width: 26px;
-        filter: invert();
-        cursor: pointer;
     }
-
     .social-icon:hover {
         width: 30px;
     }
 }
 
-@media screen and (max-width: 370px) {
+
+@media screen and (max-width: 400px) {
+    .header-img {
+        width: 50px;
+        height: 46px;
+        cursor: pointer;
+    }
+
+    .container-1 {
+        width: 390px;
+    }
+
+    .container-2 {
+        width: 370px;
+        
+    }
 
     .portfolio-card-designer {
+        margin-top: 64px;
         padding: 10px 20px;
         padding-bottom: 40px;
+    }
+
+    .portfolio-card {
+        height: 80%;
+        min-width: 350px;
+    }
+
+    .portfolio-card-skills {
+        min-height: 320px;
+        min-width: 350px;
+        margin-top: 0;
+        margin-bottom: 10;
     }
 }

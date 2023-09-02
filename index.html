@@ -13,19 +13,18 @@
     <nav>
         <div class="main-nav container flex">
             <a href="#" onclick="reload()" class="company-logo">
-                <img src="./assets/z-logo.png" width="60px" alt="com logo">
+                <img src="./assets/z-logo.png" class="header-img" alt="com logo">
             </a>
 
             <div class="nav-links">
                 <ul class="flex">
-                    <li class="hover-link nav-item" id="news-website"><a href="NewsWebsite/index.html">News+</a></li>
-                    <li class="hover-link nav-item" id="netclix"><a href="Netclix/netflix.html">Netclix</a></li>
+                    <li class="hover-link nav-item" id="news-website"><a href="NewsPlus/index.html">News+</a></li>
                 </ul>
             </div>
 
             <div class="search-bar flex">
                 <button class="dark-button" onclick="darkMode()" style="background: none; border: none;"><img
-                        src="assets/night-mode.png" alt="night-mode" class="dark-img"></button>
+                        src="assets/night-mode.png" alt="night-mode" class="header-img dark-img"></button>
             </div>
         </div>
     </nav>
@@ -33,15 +32,13 @@
     <div class="container flex">
         <div class="container-1">
             <div class="portfolio-cards">
-
-                <div class="portfolio-card-designer">
+                <div class="portfolio-card portfolio-card-designer">
                     <div class="card-subheading">
                         <div>"Before software can be reusable it first has to be usable." <br>
-                            <p class="quoter"> - Ralph Johnson</p>
+                            <p class="quoter">- Ralph Johnson</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="portfolio-card">
                     <h2 class="card-heading">Hey, User!</h2>
                     <div class="card-subheading">Welcome to my corner of the web! I'm Zeeshan, an aspiring software dev
@@ -50,47 +47,40 @@
                         programming skills for developing new things.
                     </div>
                 </div>
-
             </div>
         </div>
 
         <div class="container-2">
-
             <div class="portfolio-cards">
-
-
-                <div class="portfolio-card-skills">
-
-                    <div class="about-col-2">
-
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Projects</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Languages</span><br>Python, Java, C++</li>
-                                <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
-                                <li><span>DBMS</span><br>MySQL</li>
-                                <li><span>Tools and Techs</span><br>Flask, Git, Github</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Blogging Platform</span><br>Flask</li>
-                                <li><span>Employee Management System</span><br>Java Swing</li>
-                                <li><span>News Website</span><br>HTML, CSS, JavaScript</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2022</span><br>MCA - SPIT, Mumbai</li>
-                                <li><span>2019</span><br>BA - SJCHS, Palghar</li>
-                                <li><span>2017</span><br>Higher Secondary - PG Junior College, Bordi</li>
-                                <li><span>2016</span><br>Matriculation - St. Mary's, Dahanu</li>
-                            </ul>
-                        </div>
+                <div class="portfolio-card portfolio-card-skills">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Python, Java, C++</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>DBMS</span><br>MySQL</li>
+                            <li><span>Tools and Techs</span><br>Flask, Git, Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Blogging Platform</span><br>Flask</li>
+                            <li><span>Employee Management System</span><br>Java Swing</li>
+                            <li><span>News Website</span><span><a href="NewsWebsite/index.html"><img
+                                            src="assets/external-link.png" alt="link" class="project-link"></a></span><br>HTML, CSS, JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>MCA - SPIT, Mumbai</li>
+                            <li><span>2022</span><br>BA - SJCHS, Palghar</li>
+                            <li><span>2019</span><br>Intermediate - PG Junior College, Bordi</li>
+                            <li><span>2017</span><br>Matriculation - St. Mary's, Dahanu</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -123,13 +113,10 @@
 
     <footer>
         <hr class="footer-row">
-
         <div class="footer-container  flex">
-
-
             <div class="footer-bio flex">
                 <div class="email-resume">
-                    <a href="assets/MyResume.pdf" download><button class="resume">My Résumé</button></a>
+                    <a href="myresume.pdf" download><button class="resume">My Résumé</button></a>
                 </div>
             </div>
 
