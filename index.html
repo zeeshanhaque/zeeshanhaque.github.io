@@ -15,7 +15,8 @@
     <header class="navigation-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav-logo">Zeeshan Haque</a>
+                
+                <a href="#" class="nav-logo"><img src="assets/z-logo.png" alt=""></a>
             </div>
 
             <div class="nav-menu" id="nav-menu">
@@ -39,7 +40,7 @@
         <!--===== HOME =====-->
         <section class="home" id="home">
             <div class="home-container bd-grid">
-                <h1 class="home-title"><span>Hi</span><br>There!</h1>
+                <h1 class="home-title"><span>Hi</span><span class="wave">👋</span><br>There!</h1>
 
                 <div class="home-scroll">
                     <a href="#about" class="home-scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
@@ -58,17 +59,20 @@
 
                 <div>
                     <h2 class="about-subtitle">Zeeshan Haque</h2>
-                    <span class="about-profession">Software Dev. <br> MMA Enthusiast <br> Tech Geek <br> Knowledge Seeker </span>
-                            <p class="about-text">Passionate about coding and a dedicated MMA enthusiast. Just as I meticulously debug code, I dissect fight strategies and techniques with the same level of precision. The dynamic nature of both fields keeps me engaged and constantly learning.
-                            </p>
+                    <span class="about-profession">Software Dev. <br> MMA Enthusiast <br> Tech Geek <br> Knowledge
+                        Seeker </span>
+                    <p class="about-text">Passionate about coding and a dedicated MMA enthusiast. Just as I meticulously
+                        debug code, I dissect fight strategies and techniques with the same level of precision. The
+                        dynamic nature of both fields keeps me engaged and constantly learning.
+                    </p>
 
-                            <p class="about-text">Seeking to be inspired, to envision the unlikely, to work hard for
-                                things that are worth it, and to be surrounded by those who bring out the best in me.
-                            </p>
+                    <p class="about-text">Seeking to be inspired, to envision the unlikely, to work hard for
+                        things that are worth it, and to be surrounded by those who bring out the best in me.
+                    </p>
 
-                            <div class="resume">
-                                <a href="assets/MyResume.pdf" download><button class="resume-button">My Résumé</button></a>
-                            </div>
+                    <div class="resume">
+                        <a href="assets/MyResume.pdf" download><button class="resume-button">My Résumé</button></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -110,30 +114,23 @@
 
             <div class="projects-container bd-grid">
 
-                <div class="projects-img">
-                    <img src="assets/NewsPlus-work.png" alt="">
+                <div class="projects-card">
+                    <img src="assets/NewsPlus-work.png" class="projects-img" alt="">
 
                     <div class="projects-about">
                         <a href="https://zeeshanhaque.github.io/NewsPlus/index.html" class="button" target="_blank"
-                            rel="noopener noreferrer" class="projects-about-name">News+ {HTML, CSS, JavaScript}</a>
+                            rel="noopener noreferrer" class="projects-about-name"><strong>News+</strong> {HTML, CSS,
+                            JS}<span class="projects-link">🔗</span></a>
                     </div>
                 </div>
 
-                <div class="projects-img">
-                    <img src="assets/NewsPlus-work.png" alt="">
+                <div class="projects-card">
+                    <img src="assets/IdeaSpace-Work.png" class="projects-img" alt="">
 
                     <div class="projects-about">
-                        <a href="https://zeeshanhaque.github.io/NewsPlus/index.html" class="button" target="_blank"
-                            rel="noopener noreferrer" class="projects-about-name">News+ {HTML, CSS, JavaScript}</a>
-                    </div>
-                </div>
-
-                <div class="projects-img">
-                    <img src="assets/NewsPlus-work.png" alt="">
-
-                    <div class="projects-about">
-                        <a href="https://zeeshanhaque.github.io/NewsPlus/index.html" class="button" target="_blank"
-                            rel="noopener noreferrer" class="projects-about-name">News+ {HTML, CSS, JavaScript}</a>
+                        <a href="https://github.com/zeeshanhaque/IdeaSpace" class="button" target="_blank"
+                            rel="noopener noreferrer" class="projects-about-name"><strong>IdeaSpace</strong> {Flask, SQLAlchemy}<span
+                                class="projects-link"><img src="assets/social-icons/github-icon.png" alt=""></span></a>
                     </div>
                 </div>
 
@@ -178,7 +175,9 @@
 
             <div class="connect-container bd-grid">
                 <div class="connect-info">
-                    <h3 class="connect-subtitle">zeeshanhaque00077@gmail.com</h3>
+                    <a href="mailto:zeeshanhaque00077@gmail.com">
+                        <h3 class="connect-subtitle">zeeshanhaque00077@gmail.com</h3>
+                    </a>
                     <span class="connect-text"></span>
                 </div>
 
@@ -193,7 +192,8 @@
                             src="assets/social-icons/linkedin-icon.png" class="social-icon" alt="linkedin"></a>
                 </div>
                 <div class="connect-whatsapp flex">
-                    <a href="https://api.whatsapp.com/send?phone=918208684635&text=Hi!" target="_blank">'Hi!' me on <img src="assets/social-icons/whatsapp-icon.png" alt=""></a>
+                    <a href="https://api.whatsapp.com/send?phone=918208684635&text=Hi!" target="_blank">'Hi!' me on <img
+                            src="assets/social-icons/whatsapp-icon.png" alt=""></a>
                 </div>
             </div>
         </section>
@@ -203,7 +203,8 @@
     <footer class="footer section">
         <div class="footer__container bd-grid">
             <div class="footer__data">
-                <h2 class="footer__title">Zeeshan Haque</h2>
+                <img class="footer-logo" src="assets/z-logo.png" alt="">
+                <!-- <h2 class="footer__title">Zeeshan Haque</h2> -->
                 <p class="footer__text">Portfolio Website</p>
             </div>
 
@@ -219,19 +220,16 @@
             </div>
 
             <div class="footer__data">
-                <h2 class="footer__title">FOLLOW</h2>
-                <a href="https://www.linkedin.com/in/zeeshan-haque-8972ab288/" target="_blank" rel="noopener noreferrer"
-                    class="footer__social"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/zeeshanhaque" target="_blank" rel="noopener noreferrer"
-                    class="footer__social"><i class='bx bxl-github'></i></a>
+                <h2 class="footer__title">ADDRESS</h2>
+    
+                <div>
+                    <i class='bx bx-location-plus'></i> Palghar, Maharashtra
+                </div>
             </div>
 
 
         </div>
     </footer>
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
     <script src="script.js"></script>

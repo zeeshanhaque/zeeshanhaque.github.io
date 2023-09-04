@@ -177,8 +177,8 @@ img {
     color: var(--first-color);
 }
 
-.nav-logo {
-    color: var(--white-color);
+.nav-logo img {
+    width: 60px;
 }
 
 .nav-toggle {
@@ -224,6 +224,43 @@ img {
     text-shadow: 0 20px 25px rgba(0, 0, 0, .5);
 }
 
+.wave {
+    font-size: 100px;
+    vertical-align: middle;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate(0.0deg)
+    }
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
 .home-scroll {
     align-self: flex-end;
     padding-bottom: var(--mb-4);
@@ -242,18 +279,10 @@ img {
     text-align: center;
 }
 
-.about-img {
-    display: flex;
-    justify-content: center;
-    border-radius: 10%;
-    height: 340px;
-    /* width: 260px; */
-}
-
 .about-img img {
     border: 4px solid var(--first-color);
     border-radius: 10px;
-    
+    height: 440px;
 }
 
 .about-subtitle {
@@ -317,7 +346,7 @@ img {
     background-color: #2e6d30;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 8px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -341,13 +370,27 @@ img {
     row-gap: 1rem;
 }
 
-.projects-img {
+.projects-card {
     overflow: hidden;
 }
+.projects-img {
+    height: 220px;
+}
 
-.projects-img img {
-    border: 1px solid var(--first-color);
+.projects-card img {
+    border: 2px solid var(--first-color);
     border-radius: .5rem;
+}
+
+.projects-link {
+    padding-left: 26px;
+    font-size: 26px;
+}
+.projects-link img {
+    border: none;
+    display: inline-block;
+    width: 28px;
+    vertical-align: middle;
 }
 
 /* ===== HOBBIES =====*/
@@ -408,6 +451,10 @@ img {
     color: var(--first-color);
     margin: 0 auto;
 }
+.connect-subtitle:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
 
 .connect_icons {
     height: 100%;
@@ -437,7 +484,7 @@ img {
 .connect-whatsapp:hover {
     background-color: lightgreen;
 }
-.connect-whatsapp img{
+.connect-whatsapp img {
     vertical-align: middle;
     display: inline-block;
     width: 40px;
@@ -459,6 +506,11 @@ img {
     margin-bottom: var(--mb-2);
 }
 
+.footer-logo {
+    width: 100px;
+    margin: 0;
+}
+
 .footer__link {
     padding: .25rem 0;
 }
@@ -478,14 +530,16 @@ img {
 
 /* ===== MEDIA QUERIES =====*/
 /* For small devices */
-@media screen and (max-width: 320px) {
-    .home-img {
-        width: 230px;
-    }
-}
+
 @media screen and (max-width: 400px) {
     .gallery {
         grid-auto-rows: 100px;
+    }
+    .wave {
+        font-size: 60px;
+    }
+    .projects-img {
+        height: auto;
     }
 }
 
@@ -556,6 +610,9 @@ img {
     .nav {
         height: calc(var(--header-height) + 1rem);
     }
+    .nav-logo img {
+        width: 80px;
+    }
     .nav-list {
         display: flex;
     }
@@ -576,23 +633,15 @@ img {
         background-color: var(--white-color);
     }
     .home-container {
-        height: 100vh;
+        height: 90vh;
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
-    }
-    .home-img {
-        width: 524px;
-        right: 10%;
     }
     .about-container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
         padding: 4rem 0;
-    }
-    .about-img {
-        width: 220px;
-        height: 300px;
     }
     .skills-container {
         grid-template-columns: repeat(2, 1fr);
@@ -611,22 +660,15 @@ img {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
+
+    .footer-logo {
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
-    }
-}
-
-@media screen and (min-height: 721px) {
-    .home-container {
-        height: 640px;
-    }
-
-    .home-img {
-        width: 500px;
-        right: 24%;
     }
 }
