@@ -280,10 +280,14 @@ img {
     height: 360px;
 }
 
-.about-subtitle {
+.about-title {
     font-size: var(--h2-font-size);
     color: var(--first-color);
     margin-bottom: var(--mb-1);
+}
+
+.about-subtitle {
+    margin-bottom: var(--mb-2);
 }
 
 .about-text {
