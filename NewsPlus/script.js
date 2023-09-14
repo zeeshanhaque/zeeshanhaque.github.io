@@ -21,6 +21,7 @@ async function fetchNews(newsCategory) {
     } catch (error) {
         console.error("Error fetching news:", error);
     }
+    document.documentElement.scrollTop = 0;
 }
 
 function bindData(newsData) {
