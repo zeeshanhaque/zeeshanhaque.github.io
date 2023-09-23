@@ -353,6 +353,18 @@ img {
 
 .projects-card {
     overflow: hidden;
+    margin-bottom: var(--mb-4);
+}
+
+.projects-about p {
+    align-items: center;
+    height: 80px;
+}
+
+.project-title {
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 .projects-img {
@@ -364,21 +376,32 @@ img {
     border-radius: .5rem;
 }
 
-.projects-link {
-    padding-left: 26px;
-    font-size: 26px;
+.projects-container .skills-container {
+    height: 40px;
+}
+
+.projects-skills {
+    width: max-content;
+}
+
+.projects-skills .skills-name {
+    margin: 0 auto;
+    border: 1px solid var(--first-color);
+}
+
+.project-links {
+    column-gap: 6px;
 }
 
 .projects-link img {
     border: none;
-    display: inline-block;
     width: 28px;
     vertical-align: middle;
 }
 
 .button {
     width: 100%;
-    background-color: #2e6d30;
+    background-color: var(--first-color);
     border: none;
     color: white;
     padding: 8px 24px;
@@ -392,7 +415,7 @@ img {
 }
 
 .button:hover {
-    background-color: var(--first-color);
+    background-color: #2e6d30;
 }
 
 /* ===== LIFESTYLE =====*/
@@ -444,6 +467,7 @@ img {
 .connect {
     background-color: var(--white-color);
 }
+
 .connect-container {
     padding-bottom: 100px;
     row-gap: 2rem;
@@ -488,6 +512,10 @@ img {
 
 .connect-whatsapp:hover {
     background-color: lightgreen;
+}
+
+.connect-whatsapp a {
+    object-fit: contain;
 }
 
 .connect-whatsapp img {
@@ -557,6 +585,10 @@ img {
 
     .projects-img {
         height: auto;
+    }
+
+    .projects-about p {
+        height: fit-content;
     }
 }
 
