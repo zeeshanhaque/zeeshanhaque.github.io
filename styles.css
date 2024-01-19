@@ -277,6 +277,7 @@ img {
     justify-items: center;
     row-gap: 2rem;
     text-align: center;
+    align-content: center;
 }
 
 .about-img img {
@@ -293,6 +294,14 @@ img {
 
 .about-subtitle {
     margin-bottom: var(--mb-2);
+}
+
+.ins-bnp {
+    color: #03a776;
+}
+
+.ins-spit {
+    color: #954843;
 }
 
 .about-text {
