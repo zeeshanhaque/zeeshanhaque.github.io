@@ -608,7 +608,9 @@ img {
     }
 
     .projects-img {
+        width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
     .projects-about p {
