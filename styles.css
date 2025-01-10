@@ -368,6 +368,7 @@ img {
 .projects-card {
     overflow: hidden;
     margin-bottom: var(--mb-4);
+    flex-direction: column;
 }
 
 .projects-about p {
@@ -383,6 +384,8 @@ img {
 
 .projects-img {
     height: 220px;
+    width: 420px;
+    margin: auto;
 }
 
 .projects-card img {
